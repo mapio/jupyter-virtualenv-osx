@@ -9,7 +9,7 @@ from jupyter_client.kernelspec import KernelSpecManager
 
 def install_my_kernel_spec(name, user = True, prefix = None):
     kernel_json = {
-        'argv': ['/usr/local/bin/python', '-m', 'echo_kernel', '-f', '{connection_file}'],
+        'argv': ['/usr/local/bin/python', '-m', 'ipykernel', '-f', '{connection_file}'],
         'name': name,
         'env': {'PYTHONHOME': os.environ.get('VIRTUAL_ENV', '')},
         'language': 'python2',

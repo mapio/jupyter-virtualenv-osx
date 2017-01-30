@@ -50,3 +50,16 @@ This script will create a kernelspec as the following
 
 instructing Jupyter to use the brewed Python and setting up the environment
 variable `PYTHONHOME` to be equal to the virtualenv home `$VIRTUAL_ENV`.
+
+
+##  Using non-virtualenv Jupyter
+
+Even if installing Jupyter in the virtualenv, thus not polluting the system
+packages, is a pretty good idea, this script can be used also in case you have a
+system-wide installation of Jupyter (or at least of `jupyter-client`), and you
+want to install in the virtualenv just the additional libraries. In such a case,
+make system packages available in the virtualenv and proceed as before
+
+    mkvirtualenv --system-site-packages my_venv
+    pip install matplotlib
+    python jupyter-virtualenv-osx.py --user --name "My Env"

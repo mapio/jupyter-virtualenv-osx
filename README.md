@@ -19,7 +19,7 @@ your virtualenv home, that is setting such variable equal to the value of
 The [jupyter-virtualenv-osx](jupyter-virtualenv-osx.py) script automates the
 creation of an IPython kernel configuration implementing the above workaround.
 
-## How to use this script
+## How to use this script
 
 First of all, I suggest to use the [homebrew](http://brew.sh/) version of Python
 
@@ -44,7 +44,7 @@ Now if you open a notebook using `my_env` kernel, or launch
 and issue the magic command `%matplotlib` you'll see
 
     Using matplotlib backend: MacOSX
-`
+
 in your output, meaning that the native backend has been selected.
 
 Assuming you want to put everything in a virtualenv (that is the solution I

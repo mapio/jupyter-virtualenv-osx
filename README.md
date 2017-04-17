@@ -68,7 +68,7 @@ finally, run this scrpit
 
 ### How it works
 
-This script will create a kerne configuration like the following
+This script will create a kernel configuration like the following
 
     {
       "argv": [
